@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./assets/letter.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <title>Carta de Amor</title>
+</head>
+
+<body class="page-background">
+  <nav>
+    <a class="return-link" href="index.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+  </nav>
+  <main>
+    <div id="offset-and-options" class="visible">
+      <div class="center">
+        <section class="container container-shadow">
+          <h1 class="page-title">Querida,</h1>
+          <p class="page-text">
+            Quantas pétalas tiveram que cair para escrever esta carta?
+          </p>
+          <span class="error-message" id="error"></span>
+          <input class="offset-input" id="offset" type="text" placeholder="resposta aqui">
+          <p class="page-text">
+            escolha uma opção:
+          </p>
+          <div class="center">
+            <button id="encode-btn" class="btn cipher-btn container-shadow"><i class="fas fa-key"></i> Codificar
+              Carta</button>
+            <button id="decode-btn" class="btn cipher-btn container-shadow"><i class="far fa-envelope-open"></i>
+              Decodificar Carta</button>
+          </div>
+          <br />
+        </section>
+      </div>
+    </div>
+
+    <div id="write-letter" class="invisible">
+      <div class="cipher-container">
+        <section>
+          <p class="page-text">Eu sempre escreverei as cartas mais bonitas para você!</p>
+          <textarea class="page-text message-box" id="message" type="text"
+            placeholder="Escreva aqui sua carta secreta ..."></textarea>
+          <p id="return-to-options" class="choose-option-again">
+            <i class="far fa-envelope-open"></i> Escolha a opção novamente
+          </p>
+          <p id="clear" class="choose-option-again"><i class="fas fa-eraser"></i> Limpar Carta</p>
+        </section>
+
+        <section class="container container-shadow">
+          <h1 class="page-title">Querida,</h1>
+          <div id="final-message" class="page-text letter-box"></div>
+          <p class="page-text">Eu te amo muito!</p>
+          <h2 class="page-text">Do seu eterno amor</h2>
+
+          <br />
+          <p id="send-to-wp" class="choose-option-again">
+            <i class="fab fa-whatsapp"></i> Enviar Carta pelo WhatsApp
+          </p>
+          <p id="send-to-tg" class="choose-option-again">
+            <i class="fab fa-telegram-plane"></i> Enviar Carta pelo Telegram
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <div id="decode-letter" class="invisible">
+      <div class="cipher-container">
+        <section>
+          <p class="page-text">Eu sempre escreverei as cartas mais bonitas para você!</p>
+          <textarea class="page-text message-box" id="message-decode" type="text"
+            placeholder="Cole a carta secreta aqui ..."></textarea>
+          <p id="return-to-options-decode" class="choose-option-again">
+            <i class="far fa-envelope-open"></i> Escolha a opção novamente
+          </p>
+          <p id="clear-decode" class="choose-option-again"><i class="fas fa-eraser"></i> Limpar Carta</p>
+        </section>
+
+        <section class="container container-shadow">
+          <h1 class="page-title">Querida,</h1>
+          <div id="final-message-decode" class="page-text letter-box"></div>
+          <p class="page-text">Eu te amo muito!</p>
+          <h2 class="page-text">Do seu eterno amor</h2>
+        </section>
+      </div>
+    </div>
+
+  </main>
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
