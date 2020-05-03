@@ -58,7 +58,7 @@ const startCipher = (offset) => {
   });
 
   messageDecode.addEventListener("input", () => {
-    const cipheredMessage = cipher(offset, messageDecode.value);
+    const cipheredMessage = cipher(offset, messageDecode.value.replace("cartadeamor.github.io", ""));
     showFinalMessageDecode(cipheredMessage)
   });
 }
