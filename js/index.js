@@ -19,7 +19,7 @@ const sendWP = document.querySelector("#send-to-wp");
 const sendTG = document.querySelector("#send-to-tg");
 
 const showFinalMessage = (message) => finalMessage.innerHTML = message;
-const showFinalMessageDecode = (messageDecode) => finalMessageDecode.innerHTML = messageDecode.replace("cartadeamor.github.io", "");
+const showFinalMessageDecode = (messageDecode) => finalMessageDecode.innerHTML = messageDecode;
 
 const openAndCloseOptions = (visibilityOne, visibilityTwo, visibilityThree) => {
   offsetAndOptions.classList.remove(...offsetAndOptions.classList);
